@@ -1,3 +1,4 @@
+import PIL.Image
 from PIL import Image
 import os
 
@@ -5,8 +6,9 @@ import os
 def split_into_tiles(path, zoom_level):
     image = Image.open(path)
     width, height = image.size
-
-    tile_size = 256*(2**(5-zoom_level))
+    image = image.resize((height//2**(6-zoom_level), height//2**(6-zoom_level)))
+    width, height = image.size
+    tile_size = 256
     print()
     print(tile_size)
     tiles_dir = f"tiles/{zoom_level}"
@@ -22,5 +24,5 @@ def split_into_tiles(path, zoom_level):
             tile.save(tile_path)
 
 
-for i in range(0, 6):
+for i in range(0, 7):
     split_into_tiles("C:\map.png", i)
