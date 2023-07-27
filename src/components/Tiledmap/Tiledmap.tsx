@@ -4,10 +4,10 @@ import {CRS, LatLngBoundsExpression} from "leaflet";
 
 
 const Tiledmap = () => {
-const step = 8
+const step = 4
     const kuant: LatLngBoundsExpression = [
-        [-11*step,16*step],
-        [-9*step,14*step]
+        [-36*step,74*step],
+        [-34*step,72*step]
     ]
 
     return (
@@ -20,7 +20,7 @@ const step = 8
         >
             <TileLayer
                 noWrap
-                url="http://localhost:8000/tiles/{z}/{x}/{y}"
+                url="http://31.129.99.231:8000/tiles/{z}/{x}/{y}"
                 attribution="Game Map"
             />
             <Rectangle bounds={kuant}>
