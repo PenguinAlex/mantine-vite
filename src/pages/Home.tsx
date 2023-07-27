@@ -2,7 +2,6 @@ import {MainHeroHeader} from "../components/HeroHeaders/MainHeroHeader/MainHeroH
 import MainHeroDescription from "../components/HeroHeaders/MainHeroDescription/MainHeroDescription.tsx";
 import Gallary from "../components/Gallary/Gallary.tsx";
 import {Carousel} from "@mantine/Carousel";
-import Tiledmap from "../components/Tiledmap/Tiledmap.tsx";
 
 
 const Home = () => {

@@ -25,24 +25,7 @@ function App() {
              {link: '/dev', label: 'Разработка'},
          ]},
  ]
-    const data = [
-        {
-            title: 'Portal',
-            links:[
-                {link: '/about', label:'О нас'},
-                {link:'/contacts', label: 'Контакты'},
-                {link:'/services', label: 'Услуги'}
-            ]
-        },
-        {
-            title: 'Еще столбик',
-            links:[
-                {link: '/', label:'Ссылка 1'},
-                {link:'/', label: 'Ссылка 2'},
-                {link:'/', label: 'Ссылка 3'}
-            ]
-        },
-    ]
+
   return (
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
           <MantineProvider theme={{
