@@ -1,7 +1,7 @@
 import {MainHeroHeader} from "../components/HeroHeaders/MainHeroHeader/MainHeroHeader.tsx";
 import MainHeroDescription from "../components/HeroHeaders/MainHeroDescription/MainHeroDescription.tsx";
 import Gallary from "../components/Gallary/Gallary.tsx";
-import {Carousel} from "@mantine/Carousel";
+import {Carousel} from "@mantine/carousel";
 
 
 const Home = () => {
